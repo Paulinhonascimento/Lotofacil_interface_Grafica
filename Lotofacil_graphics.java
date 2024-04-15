@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
+import javax.swing.JPanel;
 
 public class Main extends JFrame implements ActionListener {
     private JButton aposta1, aposta2, aposta3;
@@ -19,7 +20,8 @@ public class Main extends JFrame implements ActionListener {
 
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
-
+        panel.setBackground(new Color(133, 133, 133));
+        
         aposta1 = new JButton("Apostar de 0 a 100");
         aposta2 = new JButton("Apostar de A à Z");
         aposta3 = new JButton("Apostar em Par ou Ímpar");
